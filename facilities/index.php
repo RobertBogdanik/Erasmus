@@ -38,9 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./periodic/">Periodic Table</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="./dictionary/">Dictionary</a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <a class="nav-link" href="./../api/logout.php">Sign Out</a>
@@ -56,7 +56,7 @@
     <div class="row col-11 m-auto">
         <div class="col-11 m-auto col-md-4 p-3">
             <div class="card text-center">
-                <img src="./../img/chat.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/chat.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">Messanger</h5>
                     <p class="card-text">Simple application that allows you to consult the teacher in real time.</p>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-11 m-auto col-md-4 p-3">
             <div class="card text-center">
-                <img src="./../img/translator.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/translator.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">Translator</h5>
                     <p class="card-text">Application that enables fast and accurate translation of messages between project participants.</p>
@@ -76,7 +76,7 @@
         </div>
         <div class="col-11 m-auto col-md-4 p-3">
             <div class="card text-center">
-                <img src="./../img/periodic-table.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/periodic-table.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">Periodic Table</h5>
                     <p class="card-text">Periodic table of the elements which is a must for every chemistry lesson.</p>
@@ -84,19 +84,19 @@
                 </div>
             </div>
         </div>
-        <div class="col-11 m-auto col-md-4 p-3">
+        <!-- <div class="col-11 m-auto col-md-4 p-3">
             <div class="card text-center">
-                <img src="./../img/dictionary.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/dictionary.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">Dictionary</h5>
                     <p class="card-text">Dictionary that pretends to define words that are incomprehensible to us.</p>
                     <a href="./dictionary" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        </div>
-        <div class="col-11 m-auto col-md-4 p-3">
+        </div> -->
+        <div class="col-11 m-auto col-md-6 p-3">
             <div class="card text-center">
-                <img src="./../img/e-book.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/e-book.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">E-book</h5>
                     <p class="card-text">Ebook summarizing our application.</p>
@@ -104,9 +104,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-11 m-auto col-md-4 p-3">
+        <div class="col-11 m-auto col-md-6 p-3">
             <div class="card text-center">
-                <img src="./../img/sign-out.png" class="card-img-top m-auto" alt="..." style="width: 100px;">
+                <img src="./../img/sign-out.png" class="card-img-top m-auto mt-4" alt="..." style="width: 100px;">
                 <div class="card-body">
                     <h5 class="card-title">Sign Out</h5>
                     <p class="card-text">We hope you will come back to us again.</p>

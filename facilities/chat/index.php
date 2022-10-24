@@ -47,9 +47,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./../periodic/">Periodic Table</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="./../dictionary/">Dictionary</a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <a class="nav-link" href="./../../api/logout.php">Sign Out</a>
