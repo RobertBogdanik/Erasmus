@@ -36,7 +36,6 @@ body {
     padding: 20px;
     background: #191919;
     text-align: center;
-    /* height: 450px; */
 }
 
 .box h1 {
@@ -53,7 +52,6 @@ body {
     text-align: center;
     border: 2px solid #3498db;
     padding: 14px 10px;
-    /* min-width: 200px; */
     width: 300px;
     outline: none;
     color: white;
@@ -98,14 +96,11 @@ body {
     margin-top: 100px;
     min-width: 240px;
     max-width: 1200px!important;
-    /* padding: 20px; */
     background: #191919;
     text-align: center;
-    /* height: 450px; */
 }
 .messages{
     overflow-y: auto;
-    /* height: 400px; */
 }
 .message{
     max-width: 500px;
@@ -145,7 +140,6 @@ body {
     width: 50px;
 }
 .message_right .message__time{
-    /* display: inline; */
     position: relative;
     
     left: -10px;
@@ -196,7 +190,6 @@ body {
     top: 0px;
 }
 .newMessage{
-    /* display info about new message  */
     content: "New message";
     position: absolute;
     top: -60px;
