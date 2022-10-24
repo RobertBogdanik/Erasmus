@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    animation: animateBg 9s linear infinite;
+    background-image: linear-gradient(90deg, #4584f2, #2c5eaf, #79a3e6, #4584f2, #2c5eaf);
+    background-size: 400% 100%;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.acces{
+    max-width: 1500px;
+    margin: auto!important;
+
+    text-align: center;
+    display: inline-block;
+}
+.alert{
+    max-width: 500px;
+    text-align: center;
+    margin: auto!important;
+}
+
+.box {
+    margin-top: 100px;
+    min-width: 240px;
+    max-width: 400px!important;
+    padding: 20px;
+    background: #191919;
+    text-align: center;
+    /* height: 450px; */
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input, .box .role {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    /* min-width: 200px; */
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box .role:focus{
+    background-color: #191919;
+}
+.box input:focus {
+    width: 380px;
+    max-width: 100%;
+    border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+#rols option {
+    color: white;
+    background-color: black;
+}
+
+
+.chat {
+    margin-top: 100px;
+    min-width: 240px;
+    max-width: 1200px!important;
+    /* padding: 20px; */
+    background: #191919;
+    text-align: center;
+    /* height: 450px; */
+}
+.messages{
+    overflow-y: auto;
+    /* height: 400px; */
+}
+.message{
+    max-width: 500px;
+    text-align: center;
+}
+.message__text img{
+    max-width: 300px;
+    width: 100%;
+}
+.message_right{
+    text-align: right;
+    margin: auto;
+    margin-right: 0;
+}
+.message_right .message_userName{
+    position: relative;
+    left: -80px;
+    color: white;
+    font-size: 12px;
+}
+
+.message_right .message__text{
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+
+    max-width: 300px;
+    font-size: 20px;
+    margin: 0!important;
+}
+.message_right .message__thumbnail{
+    width: 50px;
+    display: inline-block;
+}
+.message_right .message__thumbnail img{
+    width: 50px;
+}
+.message_right .message__time{
+    /* display: inline; */
+    position: relative;
+    
+    left: -10px;
+    color: white;
+    font-size: 12px;
+}
+
+.message_left{
+    text-align: left;
+    margin: auto;
+    margin-left: 0;
+}
+.message_left .message_userName{
+    position: relative;
+    left: 80px;
+    color: white;
+    font-size: 12px;
+}
+
+.message_left .message__text{
+    background-color: lightgray;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+
+    max-width: 300px;
+    font-size: 20px;
+    margin: 0!important;
+}
+.message_left .message__thumbnail{
+    width: 50px;
+    display: inline-block;
+}
+.message_left .message__thumbnail img{
+    width: 50px;
+}
+.message_left .message__time{
+    display: inline;
+    position: relative;
+    left: 80px;
+    color: white;
+    font-size: 12px;
+}
+
+.sendMessageForm{
+    position: relative;
+    margin-top: 0px!important;
+    top: 0px;
+}
+.newMessage{
+    /* display info about new message  */
+    content: "New message";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    width: 50px;
+    background-color: #6d6d6d;
+    text-align: center;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 12px;
+
+}
+.newMessage img{
+    width: 30px;
+    height: 30px;
+}
+
+#imagePreview img{
+    width: 100%;
+    height: 100%;
+}
