@@ -39,7 +39,7 @@
                         <a class="nav-link" aria-current="page" href="./../">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./../chat/">Messenger</a>
+                        <a class="nav-link active" aria-current="page" href="./../chat/">Chat</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./../translator/">Translator</a>
