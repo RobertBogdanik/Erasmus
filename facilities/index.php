@@ -18,8 +18,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img alt="Erasmus+ homepage" src="./../img/logo2.jpg" height="50px">
             <img alt="Erasmus+ homepage" src="./../img/logo.png" height="100px">
+            <img alt="Erasmus+ homepage" src="./../img/logo2.jpg" height="50px">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
