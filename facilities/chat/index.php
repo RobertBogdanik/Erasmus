@@ -7,6 +7,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,15 @@
         }
     </script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <img alt="Erasmus+ homepage" src="./../../img/logo.png" height="100px">
-            <img alt="Erasmus+ homepage" src="./../../img/logo2.jpg" height="50px">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light row m-0 col-12">
+        <div class="col-5">
+
+            <img alt="Erasmus+ homepage" src="./../../img/logo.jpg" height="100px">
+            <img alt="Erasmus+ homepage" src="./../../img/FE.jpg" height="80px">
+        </div>
+        <div class="container col-7">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +52,6 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./../periodic/">Periodic Table</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="./../dictionary/">Dictionary</a>
-                    </li> -->
-
                     <li class="nav-item">
                         <a class="nav-link" href="./../../api/logout.php">Sign Out</a>
                     </li>
@@ -80,7 +81,6 @@
                     aria-describedby="button-addon2" id="newSimpleMessage">
                 <button class="btn btn-outline-secondary" type="button" id="sendSimpleMessage">Send</button>
             </div>
-            <a href="https://icons8.com/" class="link-light" target="_blank">Icons from Icons8</a>
         </div>
     </div>
     <div class="modal fade" id="sendImage" tabindex="-1" aria-labelledby="sendImageLabel" aria-hidden="true">
@@ -116,12 +116,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img id="image" src="./../../img/logo.png" alt="image">
+                    <img id="image" src="./../../img/logo.jpg" alt="image">
                 </div>
             </div>
         </div>
     </div>
 
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.7);">
+            <a class="text-dark" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                <img src="./../../img/cc.svg" alt="Creative Commons" style="height: 50px;">
+            </a>
+            <a href="https://icons8.com/" class="text-dark" target="_blank">
+                <img src="./../../img/icons8.png" alt="Icons8" style="height: 50px;">
+            </a>
+        </div>
+    </footer>
     <script>
         const chatMessages = document.querySelector('.messages');
         const scrollDown = document.querySelector('.newMessage');
@@ -131,7 +141,6 @@
         let lastUpdate = null;
         let loadPreviousMessages = false;
 
-        // create function to display new message
         function showMessage(message, messageType, messageTime, messageUser, userThumbnail, image, atEnd) {
             const messageDiv = document.createElement('div');
             messageDiv.classList.add('message');
@@ -203,11 +212,11 @@
                         data.forEach(mess => {
                             messages.unshift(mess);
                             showMessage(
-                                mess.message, 
+                                mess.message,
                                 (mess.role == 1 ? 'message_right' : 'message_left'),
-                                mess.sentDate.substr(11), mess.name, 
-                                (mess.thumbnail != null ? mess.thumbnail : 'user.png'), 
-                                mess.image, 
+                                mess.sentDate.substr(11), mess.name,
+                                (mess.thumbnail != null ? mess.thumbnail : 'user.png'),
+                                mess.image,
                                 false
                             );
                         });
@@ -250,38 +259,46 @@
                     const atStart = (messages.length == 0);
                     json = json.reverse();
                     json.forEach(mess => {
-                        if (atStart) { messages.push(mess); } 
-                        else { messages.unshift(mess); }
+                        if (atStart) {
+                            messages.push(mess);
+                        } else {
+                            messages.unshift(mess);
+                        }
                         showMessage(
-                            mess.message, 
+                            mess.message,
                             (mess.role == 1 ? 'message_right' : 'message_left'),
-                            mess.sentDate.substr(11), 
-                            mess.name, 
-                            (mess.thumbnail != null ? mess.thumbnail : 'user.png'), 
-                            mess.image, 
+                            mess.sentDate.substr(11),
+                            mess.name,
+                            (mess.thumbnail != null ? mess.thumbnail : 'user.png'),
+                            mess.image,
                             true
                         );
                     });
                     return json;
                 })
                 .then((ss) => {
-                    if (lastUpdate == null) { chatMessages.scrollTop = chatMessages.scrollHeight + 20; }
-                    if (ss.length > 0) { lastUpdate = ss[ss.length - 1].sentDate;  }
+                    if (lastUpdate == null) {
+                        chatMessages.scrollTop = chatMessages.scrollHeight + 20;
+                    }
+                    if (ss.length > 0) {
+                        lastUpdate = ss[ss.length - 1].sentDate;
+                    }
                 })
         }
 
         getMessages();
         resize();
-        setInterval(() => { getMessages(); resize(); }, 1250);
+        setInterval(() => {
+            getMessages();
+            resize();
+        }, 1250);
 
 
         function resize() {
-            document.querySelector(".messages").style.height = (window.innerHeight - 116 - 62-24) + 'px';
+            document.querySelector(".messages").style.height = (window.innerHeight - 116 - 62 - 24) + 'px';
         }
         window.addEventListener('resize', resize);
     </script>
-    <div class="text-center">
-    </div>
     <script src="./../../js/bootstrap.min.js"></script>
 </body>
 
